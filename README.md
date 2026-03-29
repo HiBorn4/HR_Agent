@@ -219,7 +219,7 @@ nexus-iq/
 ### 1. Clone & Install
 
 ```bash
-git clone https://github.com/yourusername/nexus-iq.git
+git clone https://github.com/hiborn4/HR_Agent.git
 cd nexus-iq
 python -m venv venv && source venv/bin/activate
 pip install -r requirements.txt
