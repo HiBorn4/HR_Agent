@@ -438,9 +438,9 @@ This project demonstrates:
 
 **Open to opportunities** - AI/ML Engineering, Backend, or Full-Stack roles.
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://linkedin.com/in/yourprofile)
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-green?style=flat)](https://yourportfolio.com)
-[![Email](https://img.shields.io/badge/Email-Contact-red?style=flat&logo=gmail)](mailto:your@email.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://linkedin.com/in/aryan-shirke)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-green?style=flat)](https://aryanshirke.me)
+[![Email](https://img.shields.io/badge/Email-Contact-red?style=flat&logo=gmail)](mailto:hiborn4@email.com)
 
 ---
 
