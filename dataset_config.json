@@ -1,0 +1,9 @@
+{
+  "datasets": [
+    {
+      "type": "bigquery",
+      "name": "HR_AI",
+      "description": "A BigQuery dataset for HR (Human Resources) analytics. Contains tables about employees, hiring, and performance."
+    }
+  ]
+}

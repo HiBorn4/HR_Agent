@@ -1,0 +1,127 @@
+<svg width="680" viewBox="0 0 680 820" xmlns="http://www.w3.org/2000/svg" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #ffffff;">
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M2 1L8 5L2 9" fill="none" stroke="#888" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </marker>
+  <style>
+    .th { font-size:13px; font-weight:600; fill:#1a1a1a; }
+    .ts { font-size:11px; font-weight:400; fill:#555; }
+    .arr { stroke:#ccc; stroke-width:1; fill:none; }
+    .dash { stroke:#ccc; stroke-width:1; fill:none; stroke-dasharray:5 3; }
+  </style>
+</defs>
+
+<!-- USER LAYER -->
+<rect x="240" y="20" width="200" height="44" rx="8" fill="#ede9fd" stroke="#7c3aed" stroke-width="0.8"/>
+<text class="th" x="340" y="39" text-anchor="middle" fill="#4c1d95">User / Frontend</text>
+<text class="ts" x="340" y="55" text-anchor="middle" fill="#6d28d9">Natural language query</text>
+
+<line x1="340" y1="64" x2="340" y2="100" stroke="#aaa" stroke-width="1" marker-end="url(#arrow)"/>
+<text class="ts" x="350" y="85" fill="#999">POST /chat</text>
+
+<!-- FASTAPI LAYER -->
+<rect x="190" y="100" width="300" height="56" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="0.8"/>
+<text class="th" x="340" y="120" text-anchor="middle" fill="#1e3a8a">FastAPI Backend</text>
+<text class="ts" x="340" y="137" text-anchor="middle" fill="#1d4ed8">Auth check · Session mgmt · Response cache</text>
+
+<line x1="340" y1="156" x2="340" y2="192" stroke="#aaa" stroke-width="1" marker-end="url(#arrow)"/>
+
+<!-- QUERY ROUTER -->
+<rect x="200" y="192" width="280" height="56" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="0.8"/>
+<text class="th" x="340" y="212" text-anchor="middle" fill="#78350f">Intelligent Query Router</text>
+<text class="ts" x="340" y="230" text-anchor="middle" fill="#b45309">Gemini 2.5 · Table selection · Agent tier routing</text>
+
+<line x1="340" y1="248" x2="340" y2="284" stroke="#aaa" stroke-width="1" marker-end="url(#arrow)"/>
+<text class="ts" x="350" y="270" fill="#999">Router output injected</text>
+
+<!-- ADK CONTAINER -->
+<rect x="30" y="284" width="620" height="200" rx="12" fill="none" stroke="#aaa" stroke-width="0.8" stroke-dasharray="6 4"/>
+<text class="ts" x="48" y="302" fill="#999">Google ADK — Multi-Agent System</text>
+
+<!-- Root Agent -->
+<rect x="220" y="310" width="200" height="44" rx="8" fill="#ccfbf1" stroke="#0d9488" stroke-width="0.8"/>
+<text class="th" x="320" y="330" text-anchor="middle" fill="#134e4a">Root Agent</text>
+<text class="ts" x="320" y="345" text-anchor="middle" fill="#0f766e">ADK LlmAgent + BuiltInPlanner</text>
+
+<line x1="260" y1="354" x2="130" y2="390" stroke="#aaa" stroke-width="1" marker-end="url(#arrow)"/>
+<line x1="320" y1="354" x2="320" y2="390" stroke="#aaa" stroke-width="1" marker-end="url(#arrow)"/>
+<line x1="380" y1="354" x2="510" y2="390" stroke="#aaa" stroke-width="1" marker-end="url(#arrow)"/>
+
+<!-- BigQuery Agent -->
+<rect x="50" y="390" width="158" height="56" rx="8" fill="#ccfbf1" stroke="#0d9488" stroke-width="0.8"/>
+<text class="th" x="129" y="408" text-anchor="middle" fill="#134e4a">BigQuery Agent</text>
+<text class="ts" x="129" y="423" text-anchor="middle" fill="#0f766e">CHASE NL2SQL</text>
+<text class="ts" x="129" y="438" text-anchor="middle" fill="#0f766e">SQL execution</text>
+
+<!-- Analytics Agent -->
+<rect x="238" y="390" width="164" height="56" rx="8" fill="#ccfbf1" stroke="#0d9488" stroke-width="0.8"/>
+<text class="th" x="320" y="408" text-anchor="middle" fill="#134e4a">Analytics Agent</text>
+<text class="ts" x="320" y="423" text-anchor="middle" fill="#0f766e">Gemini 2.5 Pro/Flash</text>
+<text class="ts" x="320" y="438" text-anchor="middle" fill="#0f766e">Summarize · insights</text>
+
+<!-- BQML Agent -->
+<rect x="422" y="390" width="158" height="56" rx="8" fill="#ccfbf1" stroke="#0d9488" stroke-width="0.8"/>
+<text class="th" x="501" y="408" text-anchor="middle" fill="#134e4a">BQML Agent</text>
+<text class="ts" x="501" y="423" text-anchor="middle" fill="#0f766e">ML predictions</text>
+<text class="ts" x="501" y="438" text-anchor="middle" fill="#0f766e">Forecasting</text>
+
+<!-- Agents → BigQuery -->
+<line x1="129" y1="446" x2="200" y2="506" stroke="#aaa" stroke-width="1" marker-end="url(#arrow)"/>
+<line x1="320" y1="446" x2="320" y2="506" stroke="#aaa" stroke-width="1" marker-end="url(#arrow)"/>
+<line x1="501" y1="446" x2="440" y2="506" stroke="#aaa" stroke-width="1" marker-end="url(#arrow)"/>
+
+<!-- BIGQUERY DATA LAYER -->
+<rect x="50" y="506" width="580" height="44" rx="8" fill="#f1f5f9" stroke="#64748b" stroke-width="0.8"/>
+<text class="th" x="340" y="524" text-anchor="middle" fill="#1e293b">Google BigQuery</text>
+<text class="ts" x="340" y="540" text-anchor="middle" fill="#475569">HR_AI dataset · Dynamic schema profiling · 60-min cache TTL</text>
+
+<line x1="340" y1="550" x2="340" y2="586" stroke="#aaa" stroke-width="1" marker-end="url(#arrow)"/>
+<text class="ts" x="350" y="571" fill="#999">SQL result + text</text>
+
+<!-- INSIGHT ORCHESTRATOR -->
+<rect x="170" y="586" width="340" height="68" rx="8" fill="#ffe4e6" stroke="#e11d48" stroke-width="0.8"/>
+<text class="th" x="340" y="606" text-anchor="middle" fill="#881337">Insight Orchestrator</text>
+<text class="ts" x="340" y="622" text-anchor="middle" fill="#be123c">Intent engine · Gemini data extractor · Chart recommender</text>
+<text class="ts" x="340" y="637" text-anchor="middle" fill="#be123c">Fast-path table parser · Quality gate</text>
+<text class="ts" x="340" y="650" text-anchor="middle" fill="#be123c">→ auto chart type selection</text>
+
+<line x1="280" y1="654" x2="190" y2="706" stroke="#aaa" stroke-width="1" marker-end="url(#arrow)"/>
+<line x1="400" y1="654" x2="490" y2="706" stroke="#aaa" stroke-width="1" marker-end="url(#arrow)"/>
+
+<!-- Plotly -->
+<rect x="60" y="706" width="240" height="44" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="0.8"/>
+<text class="th" x="180" y="724" text-anchor="middle" fill="#14532d">Plotly (interactive)</text>
+<text class="ts" x="180" y="740" text-anchor="middle" fill="#15803d">Bar · Donut · Line · Area · Scatter</text>
+
+<!-- Matplotlib fallback -->
+<rect x="380" y="706" width="240" height="44" rx="8" fill="#f1f5f9" stroke="#94a3b8" stroke-width="0.8"/>
+<text class="th" x="500" y="724" text-anchor="middle" fill="#334155">Matplotlib (fallback)</text>
+<text class="ts" x="500" y="740" text-anchor="middle" fill="#475569">Static PNG base64</text>
+
+<line x1="180" y1="750" x2="290" y2="784" stroke="#aaa" stroke-width="1" marker-end="url(#arrow)"/>
+<line x1="500" y1="750" x2="390" y2="784" stroke="#aaa" stroke-width="1" marker-end="url(#arrow)"/>
+
+<!-- Response -->
+<rect x="200" y="784" width="280" height="26" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="0.8"/>
+<text class="th" x="340" y="800" text-anchor="middle" fill="#1e3a8a">JSON response → frontend</text>
+
+<!-- Side: Dynamic Prompting -->
+<rect x="558" y="192" width="112" height="56" rx="8" fill="#fdf2f8" stroke="#a21caf" stroke-width="0.8"/>
+<text class="th" x="614" y="212" text-anchor="middle" fill="#701a75">Dynamic Prompting</text>
+<text class="ts" x="614" y="228" text-anchor="middle" fill="#a21caf">Schema cached</text>
+<text class="ts" x="614" y="243" text-anchor="middle" fill="#a21caf">Domain rules JIT</text>
+<line x1="558" y1="220" x2="480" y2="220" stroke="#ccc" stroke-width="1" stroke-dasharray="4 3" marker-end="url(#arrow)"/>
+
+<!-- Side: Firestore -->
+<rect x="10" y="100" width="112" height="56" rx="8" fill="#f1f5f9" stroke="#64748b" stroke-width="0.8"/>
+<text class="th" x="66" y="118" text-anchor="middle" fill="#1e293b">Firestore</text>
+<text class="ts" x="66" y="134" text-anchor="middle" fill="#475569">Sessions · Cache</text>
+<text class="ts" x="66" y="148" text-anchor="middle" fill="#475569">Chat history</text>
+<line x1="190" y1="128" x2="122" y2="128" stroke="#ccc" stroke-width="1" stroke-dasharray="4 3" marker-end="url(#arrow)"/>
+
+<!-- Side: Cloud Storage -->
+<rect x="558" y="100" width="112" height="44" rx="8" fill="#f1f5f9" stroke="#64748b" stroke-width="0.8"/>
+<text class="th" x="614" y="118" text-anchor="middle" fill="#1e293b">Cloud Storage</text>
+<text class="ts" x="614" y="134" text-anchor="middle" fill="#475569">File uploads</text>
+<line x1="490" y1="128" x2="558" y2="122" stroke="#ccc" stroke-width="1" stroke-dasharray="4 3" marker-end="url(#arrow)"/>
+</svg>

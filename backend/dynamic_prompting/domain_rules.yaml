@@ -1,0 +1,22 @@
+domains:
+  HR:
+    description: "Human Resources data including attrition, hiring, and headcount."
+    rules:
+      - "Attrition Rate = (Leavers / Average Headcount) * 100"
+      - "Fiscal Year starts in April."
+      - "Do not expose PII (Personally Identifiable Information) like exact salaries for individuals."
+    preferred_tables: ["employee_master", "attrition_records", "hiring_pipeline"]
+
+  SCM:
+    description: "Supply Chain Management, inventory, and logistics."
+    rules:
+      - "Lead Time is calculated as 'Ship Date' - 'Order Date'."
+      - "Critical Inventory is defined as stock < 10% of monthly demand."
+    preferred_tables: ["inventory_levels", "shipping_logs", "vendor_master"]
+
+  Finance:
+    description: "Financial metrics, revenue, and cost centers."
+    rules:
+      - "Revenue is recognized upon shipment, not order."
+      - "Q1 is Jan-Mar for Global reporting, Apr-Jun for Indian reporting."
+    preferred_tables: ["revenue_ledger", "cost_centers"]

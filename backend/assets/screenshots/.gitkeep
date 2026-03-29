@@ -1,0 +1,6 @@
+# Add your screenshots here. See README.md for the full screenshot guide.
+# Required files:
+#   chat_with_chart.png   — hero shot with Plotly chart rendered
+#   routing_logs.png      — backend logs showing agent routing
+#   chart_variety.png     — 2x2 grid of different chart types
+#   api_docs.png          — Swagger UI screenshot

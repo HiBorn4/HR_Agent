@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.pyc
+
+# Environments
+.env
+.venv
+venv/
+env/
+
+# Secrets & credentials
+service-account.json
+*.json.key
+credentials.json
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Uploads (user data - never commit)
+user_uploads/
+uploads/
+
+# Test artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Archives
+*.zip
+data_science.zip
+
+# Old versions
+data_science_old/

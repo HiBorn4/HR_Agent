@@ -1,0 +1,20 @@
+steps:
+  # Build the container image
+  - name: 'gcr.io/cloud-builders/docker'
+    args:
+      - 'build'
+      - '--no-cache'
+      - '-t'
+      - '$_IMAGE_URI'
+      - '--build-arg'
+      - 'VITE_API_URL=$_VITE_API_URL'
+      - '.'
+
+# Push the container image to Container Registry/Artifact Registry
+images:
+  - '$_IMAGE_URI'
+
+# Define the variables this build accepts
+substitutions:
+  _VITE_API_URL: 'http://localhost:8005' # Default fallback
+  _IMAGE_URI: 'gcr.io/my-project/my-image' # Default fallback
