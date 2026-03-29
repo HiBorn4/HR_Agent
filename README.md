@@ -1,8 +1,8 @@
-# ⚡ NexusIQ — Conversational Business Intelligence Platform
+# ⚡ HR_Agent — Conversational Business Intelligence Platform
 
 > **Ask questions in plain English. Get SQL-powered answers, interactive charts, and AI-generated insights — instantly.**
 
-NexusIQ is a full-stack, production-grade AI analytics platform that lets enterprise users query BigQuery data warehouses through natural language. It combines **Google Gemini 2.5 Pro**, a **multi-agent ADK architecture**, dynamic prompt engineering, and an auto-visualization engine into a single conversational interface.
+HR_Agent is a full-stack, production-grade AI analytics platform that lets enterprise users query BigQuery data warehouses through natural language. It combines **Google Gemini 2.5 Pro**, a **multi-agent ADK architecture**, dynamic prompt engineering, and an auto-visualization engine into a single conversational interface.
 
 Originally built for enterprise HR analytics, the architecture is fully modular and adapts to any BigQuery-connected domain (Finance, Supply Chain, Operations, etc.).
 
@@ -89,7 +89,7 @@ ARCHITECTURE DIAGRAM:
   or VS Code with SVG Preview extension).
 ============================================================ -->
 
-![NexusIQ System Architecture](assets/architecture.svg)
+![HR_Agent System Architecture](assets/architecture.svg)
 
 ### Request Flow
 
