@@ -1,6 +1,6 @@
-# ⚡ HR_Agent — Conversational Business Intelligence Platform
+# ⚡ HR_Agent - Conversational Business Intelligence Platform
 
-> **Ask questions in plain English. Get SQL-powered answers, interactive charts, and AI-generated insights — instantly.**
+> **Ask questions in plain English. Get SQL-powered answers, interactive charts, and AI-generated insights - instantly.**
 
 HR_Agent is a full-stack, production-grade AI analytics platform that lets enterprise users query BigQuery data warehouses through natural language. It combines **Google Gemini 2.5 Pro**, a **multi-agent ADK architecture**, dynamic prompt engineering, and an auto-visualization engine into a single conversational interface.
 
@@ -11,7 +11,7 @@ Originally built for enterprise HR analytics, the architecture is fully modular 
 
 ### 🎬 Architecture
 
-![Architecture](architecture.png)
+![Architecture](docs/architecture.png)
 
 
 ### 🎬 Full Demo Video
@@ -22,7 +22,7 @@ https://github.com/user-attachments/assets/811a98a8-1c3f-47b3-8a5a-615456065dd1
 <!-- ## 🎬 Demo -->
 
 <!-- ============================================================
-SCREENSHOT GUIDE — What to capture:
+SCREENSHOT GUIDE - What to capture:
   1. HERO SHOT: Full chat UI with a sample question visible
      e.g. "What is the attrition rate by division?"
      → Capture the response WITH the Plotly chart rendered below it
@@ -65,14 +65,14 @@ SCREEN RECORDING GUIDE:
 
 ## ✨ Key Features
 
-- **🗣️ Natural Language → SQL** — Type any business question; Gemini translates it to optimized BigQuery SQL using the CHASE framework
-- **🤖 Multi-Agent Architecture** — Google ADK orchestrates specialized sub-agents: a BigQuery Agent, a BQML Analytics Agent, and an Analytics summarizer
-- **📊 Auto-Visualization** — Gemini extracts chart-ready data from responses and renders interactive Plotly charts (bar, donut, line, area, scatter, horizontal bar)
-- **⚡ Smart Query Routing** — An LLM-powered router picks the right tables, SQL strategy, and agent tier (Flash vs Pro) based on query complexity
-- **🧠 Dynamic Prompt Engineering** — Schema is cached from BigQuery, profiled live, and injected into JIT prompts with domain-specific business rules (HR, Finance, SCM)
-- **🔐 Enterprise Auth** — Google OAuth 2.0 + Mahindra SSO JWT; session management via Firestore
-- **📁 File Upload & Analysis** — Upload CSVs/Excel; the platform runs ad-hoc analysis via GCS
-- **🚀 Cloud-Native Deployment** — Dockerized FastAPI app designed for Google Cloud Run with Gunicorn + Uvicorn workers
+- **🗣️ Natural Language → SQL** - Type any business question; Gemini translates it to optimized BigQuery SQL using the CHASE framework
+- **🤖 Multi-Agent Architecture** - Google ADK orchestrates specialized sub-agents: a BigQuery Agent, a BQML Analytics Agent, and an Analytics summarizer
+- **📊 Auto-Visualization** - Gemini extracts chart-ready data from responses and renders interactive Plotly charts (bar, donut, line, area, scatter, horizontal bar)
+- **⚡ Smart Query Routing** - An LLM-powered router picks the right tables, SQL strategy, and agent tier (Flash vs Pro) based on query complexity
+- **🧠 Dynamic Prompt Engineering** - Schema is cached from BigQuery, profiled live, and injected into JIT prompts with domain-specific business rules (HR, Finance, SCM)
+- **🔐 Enterprise Auth** - Google OAuth 2.0 + Mahindra SSO JWT; session management via Firestore
+- **📁 File Upload & Analysis** - Upload CSVs/Excel; the platform runs ad-hoc analysis via GCS
+- **🚀 Cloud-Native Deployment** - Dockerized FastAPI app designed for Google Cloud Run with Gunicorn + Uvicorn workers
 
 ---
 
@@ -164,7 +164,7 @@ nexus-iq/
 │   │   └── firestore.py             # Chat history, response cache, session store
 │   ├── routers/
 │   │   ├── auth.py                  # Google OAuth 2.0 + SSO JWT endpoints
-│   │   ├── chat.py                  # POST /chat — main inference endpoint
+│   │   ├── chat.py                  # POST /chat - main inference endpoint
 │   │   ├── files.py                 # File upload → GCS
 │   │   ├── sessions.py              # Session CRUD
 │   │   └── system.py                # /health, /system_status
@@ -346,9 +346,9 @@ When a user sends a message, a Gemini model reads `hr_tables_metadata.json` and 
 
 ### 2. CHASE SQL Framework
 Complex queries go through the CHASE (Candidate-and-Hypothesis-based SQL Execution) pipeline:
-- **DC (Decomposition)** — breaks the question into sub-questions
-- **QP (Query Planning)** — builds a SQL plan
-- **SQL Postprocessor** — corrects and validates before execution
+- **DC (Decomposition)** - breaks the question into sub-questions
+- **QP (Query Planning)** - builds a SQL plan
+- **SQL Postprocessor** - corrects and validates before execution
 
 ### 3. Auto-Visualization Pipeline
 After every response, the Insight Orchestrator runs:
@@ -367,13 +367,13 @@ After every response, the Insight Orchestrator runs:
 <!-- ============================================================
 WHAT TO CAPTURE FOR PORTFOLIO IMPACT:
 
-Screenshot 1 — "The Money Shot" (most important)
+Screenshot 1 - "The Money Shot" (most important)
   • Ask: "Show me headcount by division"
   • Wait for the interactive Plotly bar chart to render
   • Capture the FULL page: question + text response + chart
   • Save as: assets/screenshots/chat_with_chart.png
 
-Screenshot 2 — Multi-Agent Routing
+Screenshot 2 - Multi-Agent Routing
   • Open terminal running the server
   • Ask any complex question
   • Screenshot the log output showing:
@@ -381,12 +381,12 @@ Screenshot 2 — Multi-Agent Routing
       "BQ Agent → Analytics Agent handoff"
   • Save as: assets/screenshots/routing_logs.png
 
-Screenshot 3 — Chart Variety
+Screenshot 3 - Chart Variety
   • Ask 4 different questions that produce different chart types
   • Take a 2×2 screenshot grid showing bar, donut, line, scatter
   • Save as: assets/screenshots/chart_variety.png
 
-Screenshot 4 — API Docs
+Screenshot 4 - API Docs
   • Navigate to /docs
   • Screenshot the Swagger UI showing /chat endpoint expanded
   • Save as: assets/screenshots/api_docs.png
@@ -423,7 +423,7 @@ Video (for maximum impact):
 
 - [ ] Streaming SSE responses for real-time token output
 - [ ] Multi-turn conversation memory (RAG over chat history)
-- [ ] Dashboard builder — pin charts to a persistent view
+- [ ] Dashboard builder - pin charts to a persistent view
 - [ ] Slack/Teams bot integration
 - [ ] Self-serve dataset connector (connect any BigQuery project)
 - [ ] BQML forecasting UI (time-series predictions from chat)
@@ -432,7 +432,7 @@ Video (for maximum impact):
 
 ## 🙋‍♂️ About
 
-Built by a fullstack AI/ML engineer passionate about making data accessible to everyone — not just analysts.
+Built by a fullstack AI/ML engineer passionate about making data accessible to everyone - not just analysts.
 
 This project demonstrates:
 - Production-grade async FastAPI design patterns
@@ -442,7 +442,7 @@ This project demonstrates:
 - Enterprise auth patterns (OAuth 2.0 + JWT SSO)
 - Cloud-native deployment on GCP
 
-**Open to opportunities** — AI/ML Engineering, Backend, or Full-Stack roles.
+**Open to opportunities** - AI/ML Engineering, Backend, or Full-Stack roles.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://linkedin.com/in/yourprofile)
 [![Portfolio](https://img.shields.io/badge/Portfolio-Visit-green?style=flat)](https://yourportfolio.com)
@@ -452,6 +452,6 @@ This project demonstrates:
 
 ## 📄 License
 
-MIT License — see [LICENSE](LICENSE) for details.
+MIT License - see [LICENSE](LICENSE) for details.
 
 > **Note on proprietary data**: The `hr_tables_metadata.json` and `dataset_config.json` in this repo reference a sample HR schema. No actual employee data is included or exposed.
