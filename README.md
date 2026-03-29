@@ -8,12 +8,6 @@ Originally built for enterprise HR analytics, the architecture is fully modular 
 
 ---
 
-
-### 🎬 Architecture
-
-![Architecture](docs/architecture.png)
-
-
 ### 🎬 Full Demo Video
 
 https://github.com/user-attachments/assets/811a98a8-1c3f-47b3-8a5a-615456065dd1
@@ -89,7 +83,7 @@ ARCHITECTURE DIAGRAM:
   or VS Code with SVG Preview extension).
 ============================================================ -->
 
-![HR_Agent System Architecture](assets/architecture.svg)
+![HR_Agent System Architecture](docs/architecture.png)
 
 ### Request Flow
 
